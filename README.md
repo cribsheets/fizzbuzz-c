@@ -88,9 +88,14 @@ lame interview question.
 ## a basic solution
 
 you can view a very basic solution to this problem in the
-`solutions` branch, as fizzbuzz-simple.c. it is by no means
+`solutions` branch, as `fizzbuzz-simple.c`. it is by no means
 intended to be the optimal or most clever solution, but it
 satisfies the rules of the exercise.
+
+there are other solutions in this branch, which approach
+the problem using different tools. each one has a place
+in your tool belt, though the `fizzbuzz-simple.c` is the
+most straightforward.
 
 to see the solutions branch:
 
