@@ -22,12 +22,12 @@
 int main(void) {
 
   // first thing, we need to iterate through all of the numbers 0-100
-  for (int idx = 0; idx <= 100; idx++) {
+  for (int number = 0; number <= 100; number++) {
 
     // we put this condition first, since it's the highest
     // priority. if we'd put the 3 or 5 test first, they
     // would've printed and we'd never get to fizzbuzz
-    if ((0 == idx % 5) && (0 == idx % 3)) {
+    if ((0 == number % 5) && (0 == number % 3)) {
       // don't forget the newline!
       printf("fizzbuzz\n");
       // we continue here to shortcut out of the loop, our
@@ -37,19 +37,20 @@ int main(void) {
 
     // because 3 and 5 have the common denominator of 15, we can
     // also write the fizzbuzz more simply as a modulo 15 because math.
-    if (0 == idx % 15) {
+    if (0 == number % 15) {
       printf("fizzbuzz\n");
       continue;
     }
 
     // the next two tests for 3 and 5 could be in any order, but
     // decreasing makes more sense to me.
-    if (0 == idx % 5) {
+    if (0 == number % 5) {
       printf("buzz\n");
       // done, next continue;
+      continue;
     }
 
-    if (0 == idx % 3) {
+    if (0 == number % 3) {
       printf("fizz\n");
       continue;
     }
@@ -57,7 +58,7 @@ int main(void) {
     // if we've reached this point in the code, we know that
     // none of the previous continues have fired and as such
     // the number is not divisible by three or five.
-    printf("%i\n", idx);
+    printf("%i\n", number);
   }
 
   // since the main() signature is expecting an integer
