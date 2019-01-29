@@ -59,14 +59,40 @@ this repo with:
 a new directory called `fizzbuzz-c/` will appear in your
 current directory.
 
+## running the tests
+
+this branch includes a minimal copy of the Unity test framework in the `unity` directory.
+you can find out more about Unity at
+[http://www.throwtheswitch.org/unity/](http://www.throwtheswitch.org/unity/).
+
+here, the tests have already been written for you, but you'll need to compile
+the test program yourself. whether you use `gcc` or `cc`, compiling
+the tests looks like this:
+
+ubuntu: `gcc -o test-fizzbuzz test-fizzbuzz.c fizzbuzzfunctions.c unity/src/unity.c`
+mac: `cc -o test-fizzbuzz test-fizzbuzz.c fizzbuzzfunctions.c unity/src/unity.c`
+
+if everything successfully compiles, run the tests as follows:
+
+`./test-fizzbuzz`
+
+initially, three of the tests will fail, and three will pass.
+
+## writing the solution
+
+to write a solution to this exercise, you should first update the
+`is_fizz`, `is_buzz`, and `is_fizzbuzz` functions in `fizzbuzzfunctions.c`
+to behave correctly. you'll then _use_ those functions in `fizzbuzz.c` to
+create a solution.
+
 ## compiling the program
 
 if you're moving in a C direction, you should get used to
 compiling the source files. in this project, you can
 compile your solution with:
 
-ubuntu: `gcc -o fizzbuzz fizzbuzz.c`
-mac: `cc -o fizzbuzz fizzbuzz.c`
+ubuntu: `gcc -o fizzbuzz fizzbuzz.c fizzbuzzfunctions.c`
+mac: `cc -o fizzbuzz fizzbuzz.c fuzzbuzzfunctions.c`
 
 the `-o fizzbuzz` tells the compiler to output an executable
 called `fizzbuzz`.
@@ -85,25 +111,21 @@ of numbers, with 3, 6, 9, 12, etc. replaced by the word 'fizz',
 replaced by fizzbuzz. congrats! you're ready for your first
 lame interview question.
 
-## a basic solution
+## a tested solution
 
-you can view a very basic solution to this problem in the
-`solutions` branch, as `fizzbuzz-simple.c`. it is by no means
-intended to be the optimal or most clever solution, but it
-satisfies the rules of the exercise.
-
-there are other solutions in this branch, which approach
-the problem using different tools. each one has a place
-in your tool belt, though the `fizzbuzz-simple.c` is the
-most straightforward.
+you can view a solution to this problem satisfying the tests in the
+`with-tests-solutions` branch, as `fizzbuzz-tested.c` and 
+`fizzbuzzfunctions-tested.c`. they are by no means
+intended to be the optimal or most clever solutions, but they
+satisfy the rules of the exercise.
 
 to see the solutions branch:
 
-`git checkout solutions`
+`git checkout with-tests-solutions`
 
-to return to the master branch:
+to return to the `with-tests` branch:
 
-`git checkout master`
+`git checkout with-tests`
 
 (or just look it up on GitHub.)
 

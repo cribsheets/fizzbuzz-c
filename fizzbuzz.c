@@ -1,9 +1,10 @@
 /*
- * we include stdio.h because it has the
- * printf function we want to use to output
- * to the console.
+ * we'll collect all of our includes and declarations
+ * into the fizzbuzzfunctions.h file. you should read that file
+ * before writing the solution, since it contains function
+ * prototypes that will help.
  */
-#include <stdio.h>
+#include "fizzbuzzfunctions.h"
 
 /*
  * this function is executed when running the program
