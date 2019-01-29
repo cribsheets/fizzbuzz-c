@@ -98,7 +98,15 @@ you can view a very basic solution to this problem in the
 intended to be the optimal or most clever solution, but it
 satisfies the rules of the exercise.
 
-to see the solutions branch
+to see the solutions branch:
+
+`git checkout solutions`
+
+to return to the master branch:
+
+`git checkout master`
+
+(or just look it up on GitHub.)
 
 ## can you do better?
 
