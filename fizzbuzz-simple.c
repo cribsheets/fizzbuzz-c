@@ -35,8 +35,13 @@ int main(void) {
       continue;
     }
 
+    // as an alternative to the previous test:
     // because 3 and 5 have the common denominator of 15, we can
     // also write the fizzbuzz more simply as a modulo 15 because math.
+    // because the previous test will catch all cases where this test
+    // would be true, this block will never execute, and is presented
+    // as an alternative. in practice, you should keep only one of
+    // these.
     if (0 == number % 15) {
       printf("fizzbuzz\n");
       continue;
