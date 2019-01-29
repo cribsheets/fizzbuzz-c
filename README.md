@@ -1,15 +1,9 @@
 # the fizzbuzz exercise
 
-many interviews launch with a fizzbuzz question. it
-is a simple problem, intended to weed out programmers
-who can't do the simplest tasks in programming.
-performing this exercise demonstrates that you know
-the difference between a keyboard and a hole in
-the ground, at the 'best two out of three' level.
-
+many interviews launch with a fizzbuzz question.
 we have chosen to include it here because as a programmer,
-you'll see and hear about it so often that you'll see
-it in your dreams.
+you'll see and hear about it so often that it will
+invade your dreams.
 
 ## the exercise
 
