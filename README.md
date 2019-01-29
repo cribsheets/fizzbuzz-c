@@ -70,6 +70,7 @@ the test program yourself. whether you use `gcc` or `cc`, compiling
 the tests looks like this:
 
 ubuntu: `gcc -o test-fizzbuzz test-fizzbuzz.c fizzbuzzfunctions.c unity/src/unity.c`
+
 mac: `cc -o test-fizzbuzz test-fizzbuzz.c fizzbuzzfunctions.c unity/src/unity.c`
 
 if everything successfully compiles, run the tests as follows:
@@ -92,6 +93,7 @@ compiling the source files. in this project, you can
 compile your solution with:
 
 ubuntu: `gcc -o fizzbuzz fizzbuzz.c fizzbuzzfunctions.c`
+
 mac: `cc -o fizzbuzz fizzbuzz.c fuzzbuzzfunctions.c`
 
 the `-o fizzbuzz` tells the compiler to output an executable
